@@ -1,4 +1,5 @@
 from rest_framework import viewsets # Importation du moteur de vues de DRF
+from rest_framework.permissions import AllowAny # permet de donnez acces a une vue a tous les utilisateurs
 from .models import University, Student # Nos modèles (Database)
 from .serializers import UniversitySerializer, StudentSerializer # Nos traducteurs JSON
 
@@ -24,6 +25,7 @@ class UniversityViewSet(viewsets.ModelViewSet):
     """
     queryset = University.objects.all().order_by('abbreviation')
     serializer_class = UniversitySerializer
+    permission_classes = [AllowAny]
 
 class StudentViewSet(viewsets.ModelViewSet):
     """
@@ -34,3 +36,4 @@ class StudentViewSet(viewsets.ModelViewSet):
     """
     queryset = Student.objects.all().order_by('last_name')
     serializer_class = StudentSerializer
+    permission_classes = [AllowAny]

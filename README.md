@@ -21,31 +21,6 @@ Le projet est bâti sur une architecture **Django + Django REST Framework**, str
 
 ---
 
-## 🛠️🛠️ Contraintes de Développement (Règles de l'équipe)
-
-Pour maintenir la qualité du code et la cohérence du projet, chaque contributeur doit respecter les règles suivantes :
-
-1. **Structure des Applications** : 
-   - Toutes les nouvelles applications Django doivent impérativement être créées dans le dossier `/apps/`.
-   - Commande : `cd apps && python ../manage.py startapp nom_de_l_app`
-
-2. **Gestion des Dépendances** :
-   - Avant chaque `git commit`, si vous avez installé un nouveau package, vous devez mettre à jour le fichier des dépendances.
-   - Commande : `pip freeze > requirements.txt`
-
-3. **Documentation et Clarté** :
-   - Chaque fonction, classe ou modèle doit être accompagné d'un commentaire expliquant son rôle.
-   - Les commentaires doivent être simples et compréhensibles par tous les membres.
-
-4. **Modifications du `settings.py`** :
-   - Toute modification des paramètres globaux (Base de données, Clés API, Middlewares) doit être signalée par un commentaire explicite indiquant la raison du changement et l'auteur.
-
-5. **Messages de Commit** :
-   - Utilisez des messages explicites. 
-   - *Exemple :* `Fix: Correction du bug d'inscription des étudiants` au lieu de `Modif`.
-
----
-
 ## 🚀 Installation Rapide
 
 1. **Cloner le projet** :
@@ -86,3 +61,38 @@ Pour maintenir la qualité du code et la cohérence du projet, chaque contribute
 6. **Lancer le serveur** :
     ```Bash
     python manage.py runserver
+
+---
+
+## 🛠️🛠️ Contraintes de Développement (Règles de l'équipe)
+
+Pour maintenir la qualité du code et la cohérence du projet, chaque contributeur doit respecter les règles suivantes :
+
+1. **Structure des Applications** : 
+   - Toutes les nouvelles applications Django doivent impérativement être créées dans le dossier `/apps/`.
+   - Commande : `cd apps && python ../manage.py startapp nom_de_l_app`
+
+2. **Gestion des Dépendances** :
+   - Avant chaque `git commit`, si vous avez installé un nouveau package, vous devez mettre à jour le fichier des dépendances.
+   - Commande : `pip freeze > requirements.txt`
+
+3. **Documentation et Clarté** :
+   - Chaque fonction, classe ou modèle doit être accompagné d'un commentaire expliquant son rôle.
+   - Les commentaires doivent être simples et compréhensibles par tous les membres.
+
+4. **Modifications du `settings.py`** :
+   - Toute modification des paramètres globaux (Base de données, Clés API, Middlewares) doit être signalée par un commentaire explicite indiquant la raison du changement et l'auteur.
+
+5. **Messages de Commit** :
+   - Utilisez des messages explicites. 
+   - *Exemple :* `Fix: Correction du bug d'inscription des étudiants` au lieu de `Modif`.
+
+> [!TIP]
+> **Note sur l'IA** : L'utilisation des agents IA est un atout, mais évitez de les utiliser de manière abusive sans comprendre ce qu'ils génèrent. N'oubliez jamais que pour **comprendre**, il faut d'abord **apprendre**. Prenez le temps de lire le code généré !
+---
+
+### 👥 Contributeurs du projet
+- **shwaib19** (Lead Developer / Administrateur)
+
+---
+*UniBridge - Bâtir des ponts entre le savoir et la pratique.*

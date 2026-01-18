@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -41,7 +42,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware', # À mettre tout en haut
+    "corsheaders.middleware.CorsMiddleware", # DOIT ÊTRE TOUT EN HAUT
+    "django.middleware.common.CommonMiddleware", # À mettre tout en haut
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -120,8 +122,8 @@ STATIC_URL = 'static/'
 
 # Autoriser le Frontend (à ajuster selon l'URL de ton front)
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
+    "http://localhost:5174",
+
 ]
 
 REST_FRAMEWORK = {

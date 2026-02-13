@@ -122,7 +122,8 @@ STATIC_URL = 'static/'
 
 # Autoriser le Frontend (à ajuster selon l'URL de ton front)
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5174",
+    # Fix: Harmonisation du port de connexion backend-frontend
+    "http://localhost:5173",
 
 ]
 

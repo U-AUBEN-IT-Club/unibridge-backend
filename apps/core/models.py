@@ -15,7 +15,7 @@ class University(models.Model):
     L'abréviation est utilisée comme identifiant visuel unique.
     """
     name = models.CharField(max_length=255, unique=True)
-    abbreviation = models.CharField(max_length=20, help_text="Ex: USTB, UJKZ, VESSA")
+    abbreviation = models.CharField(max_length=20, help_text="Ex: USTB, UJKZ, VESSA", unique=True)
     location = models.CharField(max_length=255, blank=True )
     joined_at = models.DateTimeField(auto_now_add=True)
 

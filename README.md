@@ -93,6 +93,7 @@ Pour maintenir la qualité du code et la cohérence du projet, chaque contribute
 
 ### 👥 Contributeurs du projet
 - **shwaib19** (Lead Developer / Administrateur)
+- Sabinayo
 
 ---
 *UniBridge - Bâtir des ponts entre le savoir et la pratique.*
